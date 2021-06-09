@@ -1,4 +1,5 @@
 #!/bin/bash
+mvn -U -am clean package
 docker rm -f ip_test
 docker rmi -f ip_test:v1
 docker build -t ip_test:v1 .
